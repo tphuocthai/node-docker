@@ -13,4 +13,4 @@ RUN npm install
 COPY . /usr/src/app
 
 EXPOSE 3000
-CMD ["npm", "start" ]
+CMD ["npm", "start", "--bind", "0.0.0.0:$PORT"]
